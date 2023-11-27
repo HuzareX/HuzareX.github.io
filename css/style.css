@@ -19,6 +19,12 @@
   cursor: pointer;
 }
 
+.section {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
 .section-header {
   display: flex;
   align-items: center;
@@ -272,7 +278,17 @@ main .mobile-header__line {
   background-color: #9F9E9E;
   margin-top: 1em;
 }
-main .img-wrapper {
+main .section-mobile-about__decoration {
+  position: absolute;
+  height: 318px;
+  width: 318px;
+  top: 85%;
+  right: -30%;
+  background-color: #8CA6C1;
+  border-radius: 50%;
+  z-index: -1;
+}
+main .section-mobile-about .img-wrapper {
   position: relative;
   display: flex;
   align-items: center;
@@ -280,11 +296,11 @@ main .img-wrapper {
   flex-direction: column;
   padding: 3em 0;
 }
-main .img-wrapper__photo {
+main .section-mobile-about .img-wrapper__photo {
   height: 216px;
   width: 216px;
 }
-main .img-wrapper__wheel {
+main .section-mobile-about .img-wrapper__wheel {
   position: absolute;
   height: 176px;
   width: 176px;
@@ -294,7 +310,7 @@ main .img-wrapper__wheel {
   top: -10px;
   z-index: -1;
 }
-main .img-wrapper__line {
+main .section-mobile-about .img-wrapper__line {
   position: absolute;
   left: calc(50vw - 160px);
   bottom: calc(50% - 140px);
@@ -303,11 +319,36 @@ main .img-wrapper__line {
   background-color: #9F9E9E;
   z-index: -1;
 }
-main .button-wrapper {
+main .section-mobile-about .button-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+main .section-mobile-about .slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 131px;
+  width: 100vw;
+  background-color: transparent;
+}
+main .section-mobile-about .slide__photo {
+  height: 131px;
+  width: 174px;
+  background-position: center;
+  background-size: cover;
+  margin-left: 10px;
+}
+main .section-mobile-about .slide__one {
+  background-image: url(/img/wojtek.JPG);
+}
+main .section-mobile-about .slide__two {
+  background-image: url(/img/wojtek.JPG);
+}
+main .section-mobile-about .slide__three {
+  background-image: url(/img/wojtek.JPG);
 }
 
 @media (min-width: 768px) {

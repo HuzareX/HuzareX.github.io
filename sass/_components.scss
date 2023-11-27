@@ -19,6 +19,12 @@
     cursor: pointer;
 }
 
+.section {
+    position: relative;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
 .section-header {
     display: flex;
     align-items: center;

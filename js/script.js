@@ -34,3 +34,33 @@ const showText = () => {
 
 
 readBtn.addEventListener('click', showText)
+
+
+const carousel = document.querySelector('.slide');
+let isDragging = false;
+let startPosition = 0;
+let currentTranslate = 0;
+
+carousel.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startPosition = e.touches[0].clientX;
+    currentTranslate = getTranslateX();
+});
+
+carousel.addEventListener('touchmove', (e) => {
+    if (isDragging) {
+        const currentPosition = e.touches[0].clientX;
+        const deltaX = currentPosition - startPosition;
+        carousel.style.transform = `translateX(${currentTranslate + deltaX}px)`;
+    }
+});
+
+carousel.addEventListener('touchend', () => {
+    isDragging = false;
+});
+
+function getTranslateX() {
+    const transform = window.getComputedStyle(carousel).getPropertyValue('transform');
+    const matrix = new DOMMatrix(transform);
+    return matrix.m41;
+}

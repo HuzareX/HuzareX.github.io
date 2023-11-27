@@ -21,7 +21,6 @@ body {
 	font-size: 1.6rem;
 	color: $text;
 	background-color: $background;
-	
 }
 
 //mobileNav-------------------------------------------
@@ -202,7 +201,7 @@ main {
 		position: absolute;
 		top: 4rem;
 		left: 1.6rem;
-//header-------------------------------------------
+		//header-------------------------------------------
 		&__name {
 			font-size: 2.4rem;
 			font-weight: 400;
@@ -222,48 +221,91 @@ main {
 			margin-top: 1em;
 		}
 	}
-//aboutme-------------------------------------------
+	//aboutme-------------------------------------------
 
-	.img-wrapper {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		padding: 3em 0;
-
-		&__photo {
-			height: 216px;
-			width: 216px;
-		}
-
-		&__wheel {
+	.section-mobile-about {
+		&__decoration {
 			position: absolute;
-			height: 176px;
-			width: 176px;
+			height: 318px;
+			width: 318px;
+			top: 85%;
+			right: -30%;
 			background-color: $bluetwo;
 			border-radius: 50%;
-			left: calc(50vw - 50px);
-			top: -10px;
 			z-index: -1;
 		}
+		.img-wrapper {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			padding: 3em 0;
 
-		&__line {
-			position: absolute;
-			left: calc(50vw - 160px);
-			bottom: calc(50% - 140px);
-			width: 1px;
-			height: 216px;
-			background-color: $theme;
-			z-index: -1;
+			&__photo {
+				height: 216px;
+				width: 216px;
+			}
+
+			&__wheel {
+				position: absolute;
+				height: 176px;
+				width: 176px;
+				background-color: $bluetwo;
+				border-radius: 50%;
+				left: calc(50vw - 50px);
+				top: -10px;
+				z-index: -1;
+			}
+
+			&__line {
+				position: absolute;
+				left: calc(50vw - 160px);
+				bottom: calc(50% - 140px);
+				width: 1px;
+				height: 216px;
+				background-color: $theme;
+				z-index: -1;
+			}
 		}
 
-	}
-	.button-wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: row;
+		.button-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+		}
+
+		.slide {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			height: 131px;
+			width: 100vw;
+			background-color: transparent;
+			
+
+			&__photo {
+				height: 131px;
+				width: 174px;
+				background-position: center;
+				background-size: cover;
+				margin-left: 10px;
+			}
+
+			&__one {
+				background-image: url(/img/wojtek.JPG);
+			}
+
+			&__two {
+				background-image: url(/img/wojtek.JPG);
+			}
+
+			&__three {
+				background-image: url(/img/wojtek.JPG);
+			}
+		}
 	}
 }
 
