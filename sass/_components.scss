@@ -1,89 +1,89 @@
 .close {
-	transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .active {
-	transform: translateX(0);
+  transform: translateX(0);
 }
 
 .burger-btn {
-    position: fixed;
-    top: 1em;
-    right: 1em;
-    font-size: 2.4rem;
-    padding: 1.2rem;
-    z-index: 100;
-    color: $black;
-    background-color: $yellowtwo;
-    border-radius: 50%;
-    cursor: pointer;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  font-size: 2.4rem;
+  padding: 1.2rem;
+  z-index: 100;
+  color: $black;
+  background-color: $yellowtwo;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .section {
-    position: relative;
-    min-height: 100vh;
-    max-width: 100vw;
+  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 
 .section-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-    &__heading {
-        font-size: 6.4rem;
-        text-transform: uppercase;
-        letter-spacing: -0.256rem;
-        font-weight: 700;
-        color: $header;
-    }
+  &__heading {
+    font-size: 6.4rem;
+    text-transform: uppercase;
+    letter-spacing: -0.256rem;
+    font-weight: 700;
+    color: $header;
+  }
 
-    &__title {
-        font-size: 3.2rem;
-        font-weight: 400;
-        letter-spacing: 0.064rem;
-        color: $theme;
-    }
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 400;
+    letter-spacing: 0.064rem;
+    color: $theme;
+  }
 }
 
 .section-padding {
-    padding: 10em 2em;
+  padding: 10em 2em;
 }
 
 .section-margin {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .section-text {
-    font-size: 1.6rem;
-    font-weight: 400;
-    letter-spacing: 0.016rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.016rem;
 }
 
 .yellow-btn {
-    padding: 12px 24px;
-    margin-left: 1rem;
-    border-radius: 40px;
-    width: 15.9rem;
-    height: 4rem;
-    background-color: $yellowtwo;
-    border: none;
-    outline: none;
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: $black;
-    cursor: pointer;
+  padding: 12px 24px;
+  margin-left: 1rem;
+  border-radius: 40px;
+  width: 15.9rem;
+  height: 4rem;
+  background-color: $yellowtwo;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $black;
+  cursor: pointer;
 }
 
 .read-btn {
-    color: $yellowtwo;
-    cursor: pointer;
-    font-size: 1.6rem;
+  color: $yellowtwo;
+  cursor: pointer;
+  font-size: 1.6rem;
 }
 
 .section-wrapper {
-    &--hidden {
-        display: none;
-    }
+  &--hidden {
+    display: none;
+  }
 }

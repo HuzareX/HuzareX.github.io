@@ -1,32 +1,33 @@
 @media (min-width: 768px) {
-	.burger-btn {
-		display: none;
-	}
+  .burger-btn {
+    display: none;
+  }
 
-	.desktop-nav {
-		display: flex;
-	}
+  .desktop-nav {
+    display: flex;
+  }
 
-	main {
-		margin-left: 196px;
+  main {
+    // margin-left: 196px;
+    padding-left: 196px;
 
-		.mobile-header {
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
+    .mobile-header {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
 
-			&__name {
-				font-size: 10rem;
-			}
+      &__name {
+        font-size: 10rem;
+      }
 
-			&__title {
-				font-size: 5rem;
-			}
+      &__title {
+        font-size: 5rem;
+      }
 
-			&__line {
-				display: none;
-			}
-		}
-	}
+      &__line {
+        display: none;
+      }
+    }
+  }
 }
