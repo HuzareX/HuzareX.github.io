@@ -1,5 +1,5 @@
 .close {
-	transform: translateX(100%);
+	transform: translateX(150%);
 }
 
 .active {
@@ -7,83 +7,49 @@
 }
 
 .burger-btn {
-    position: fixed;
-    top: 1em;
-    right: 1em;
-    font-size: 2.4rem;
-    padding: 1.2rem;
-    z-index: 100;
-    color: $black;
-    background-color: $yellowtwo;
-    border-radius: 50%;
-    cursor: pointer;
+	position: fixed;
+	top: 1em;
+	right: 1em;
+	font-size: 2.4rem;
+	padding: 1.2rem;
+	z-index: 100;
+	color: $black;
+	background-color: $yellowtwo;
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 .section {
-    position: relative;
-    min-height: 100vh;
-    max-width: 100vw;
+	padding: 4em 1em;
+
+	.section__header {
+		font-size: 6.4rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: -2.56px;
+	}
+
+	.section__title {
+		margin-top: 0.5em;
+		font-size: 3.2rem;
+		font-weight: 400;
+		color: $theme;
+		letter-spacing: 0.64px;
+	}
 }
 
-.section-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    &__heading {
-        font-size: 6.4rem;
-        text-transform: uppercase;
-        letter-spacing: -0.256rem;
-        font-weight: 700;
-        color: $header;
-    }
-
-    &__title {
-        font-size: 3.2rem;
-        font-weight: 400;
-        letter-spacing: 0.064rem;
-        color: $theme;
-    }
-}
-
-.section-padding {
-    padding: 10em 2em;
-}
-
-.section-margin {
-    margin-top: 1em;
-}
-
-.section-text {
-    font-size: 1.6rem;
-    font-weight: 400;
-    letter-spacing: 0.016rem;
-}
-
-.yellow-btn {
-    padding: 12px 24px;
-    margin-left: 1rem;
-    border-radius: 40px;
-    width: 15.9rem;
-    height: 4rem;
+.yellow-button {
+	height: 4rem;
+	width: 15.1rem;
+	border-radius: 40px;
     background-color: $yellowtwo;
-    border: none;
-    outline: none;
+    font-weight: 500;
     font-size: 1.4rem;
-    font-weight: 400;
     color: $black;
+    border: none;
     cursor: pointer;
 }
 
-.read-btn {
-    color: $yellowtwo;
-    cursor: pointer;
-    font-size: 1.6rem;
-}
-
-.section-wrapper {
-    &--hidden {
-        display: none;
-    }
+.text {
+    font-weight: 400;
 }
