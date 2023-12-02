@@ -43,7 +43,7 @@
 	width: 15.1rem;
 	border-radius: 40px;
     background-color: $yellowtwo;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.4rem;
     color: $black;
     border: none;
@@ -52,4 +52,12 @@
 
 .text {
     font-weight: 400;
+}
+
+.readmore {
+	background-color: transparent;
+	border: none;
+	color: $yellowtwo;
+	font-weight: bold;
+	cursor: pointer;
 }

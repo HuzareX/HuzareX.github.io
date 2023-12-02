@@ -21,46 +21,18 @@ allNavItems.forEach(item => {
 
 //hidden text
 
-const hiddenText = document.querySelector('.section-wrapper--hidden')
-const readBtn = document.querySelector('.read-btn')
+const hiddenText = document.querySelector('.text-wrapper--expanded')
+const readBtn = document.querySelector('.readmore')
 
 const showText = () => {
     hiddenText.style.display = "block"
     readBtn.style.display = "none"
 }
 
-
-
-
-
 readBtn.addEventListener('click', showText)
 
+//carousel
 
-const carousel = document.querySelector('.slide');
-let isDragging = false;
-let startPosition = 0;
-let currentTranslate = 0;
 
-carousel.addEventListener('touchstart', (e) => {
-    isDragging = true;
-    startPosition = e.touches[0].clientX;
-    currentTranslate = getTranslateX();
-});
 
-carousel.addEventListener('touchmove', (e) => {
-    if (isDragging) {
-        const currentPosition = e.touches[0].clientX;
-        const deltaX = currentPosition - startPosition;
-        carousel.style.transform = `translateX(${currentTranslate + deltaX}px)`;
-    }
-});
 
-carousel.addEventListener('touchend', () => {
-    isDragging = false;
-});
-
-function getTranslateX() {
-    const transform = window.getComputedStyle(carousel).getPropertyValue('transform');
-    const matrix = new DOMMatrix(transform);
-    return matrix.m41;
-}
