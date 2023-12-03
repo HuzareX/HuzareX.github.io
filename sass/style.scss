@@ -147,6 +147,7 @@ body {
 	justify-content: space-between;
 	height: 893px;
 	width: 196px;
+	z-index: 100;
 
 	&__img {
 		margin-top: 4rem;
@@ -198,8 +199,7 @@ main {
 	max-width: 100%;
 	min-height: 100%;
 
-	.mobile-header {
-		width: 50vw;
+	.header {
 		margin-top: 4rem;
 		margin-left: 1.6rem;
 		//header-------------------------------------------
@@ -222,8 +222,8 @@ main {
 			margin-top: 1em;
 		}
 	}
-
-	.section-about {
+	//mobile-section-about---------------------------
+	.mobile-section-about {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -295,8 +295,6 @@ main {
 		display: flex;
 		justify-content: center;
 		margin-top: 2em;
-		min-width: 100vw;
-		max-width: 100vw;
 		background-color: transparent;
 
 		&__item {
@@ -306,12 +304,122 @@ main {
 			background-position: center;
 			background-size: cover;
 
-			
 			&--one {
 				background-image: url(/img/wojtek.JPG);
 			}
 			&--two {
 				background-image: url(/img/wojtek.JPG);
+			}
+		}
+	}
+
+	//about---------------------
+	.section-about {
+		display: none;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+
+		&__text-wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			text-align: left;
+		}
+
+		&__text-header {
+			font-size: 10rem;
+			text-transform: uppercase;
+			font-weight: 500;
+			letter-spacing: -2px;
+		}
+
+		&__text-title {
+			font-size: 3rem;
+			font-weight: 400;
+			color: $theme;
+		}
+
+		&__text-text {
+			font-size: 1.6rem;
+			margin-top: 1em;
+		}
+
+		&__text-name {
+			font-size: 3.2rem;
+
+			.fa-hand {
+				margin-left: 0.5em;
+				color: $yellowtwo;
+			}
+		}
+
+		.section-about-photo-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+
+			&__photo {
+				position: relative;
+				width: 200px;
+				height: 200px;
+				background-image: url(/img/wojtek.JPG);
+				background-size: cover;
+				background-position: center;
+				margin: 0 1.5em;
+			}
+
+			&__wheel {
+				position: absolute;
+				height: 150px;
+				width: 150px;
+				background-color: $bluetwo;
+				border-radius: 50%;
+				top: -2em;
+				right: -1em;
+				z-index: -1;
+			}
+
+			&__line {
+				position: absolute;
+				height: 100%;
+				width: 1px;
+				background-color: $theme;
+				left: -1em;
+				top: 1em;
+			}
+
+			.section-about-contact-wrapper {
+				display: flex;
+				align-items: flex-start;
+				justify-content: flex-start;
+				flex-direction: column;
+				width: 200px;
+				&__contact {
+					margin-top: 0.5em;
+					color: $theme;
+					font-size: 1.6rem;
+				}
+
+				&__email {
+					color: $links;
+					text-decoration: none;
+					cursor: pointer;
+					font-size: 2rem;
+				}
+			}
+
+			.section-about-button-wrapper {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+
+				&__button {
+					margin-top: 1em;
+				}
 			}
 		}
 	}
