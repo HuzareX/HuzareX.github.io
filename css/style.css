@@ -317,18 +317,16 @@ main .section-about .text-wrapper--expanded {
 }
 main .carousel-wrapper {
   display: flex;
-  overflow-x: hidden;
+  justify-content: center;
   margin-top: 2em;
-  height: 131px;
-  min-width: 90vw;
-  max-width: 90vw;
+  min-width: 100vw;
+  max-width: 100vw;
   background-color: transparent;
 }
 main .carousel-wrapper__item {
-  margin-left: 1em;
-  min-width: 174px;
+  margin-left: 0.5em;
+  min-width: 160px;
   height: 131px;
-  border: 1px solid black;
   background-position: center;
   background-size: cover;
 }
@@ -336,9 +334,6 @@ main .carousel-wrapper__item--one {
   background-image: url(/img/wojtek.JPG);
 }
 main .carousel-wrapper__item--two {
-  background-image: url(/img/wojtek.JPG);
-}
-main .carousel-wrapper__item--three {
   background-image: url(/img/wojtek.JPG);
 }
 
@@ -351,5 +346,17 @@ main .carousel-wrapper__item--three {
   }
   main {
     margin-left: 196px;
+  }
+  main .mobile-header {
+    width: 100vw;
+  }
+  main .mobile-header__name {
+    font-size: 10rem;
+  }
+  main .mobile-header__title {
+    font-size: 5rem;
+  }
+  main .mobile-header__line {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
