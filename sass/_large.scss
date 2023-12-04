@@ -1,3 +1,39 @@
 @media (min-width: 992px) {
+	main {
+		.section-about {
 
+			&__text-header {
+				font-size: 10rem;
+			}
+
+			&__text-title {
+				font-size: 3rem;
+			}
+
+			&__text-text {
+				font-size: 1.6rem;
+			}
+			.section-about-photo-wrapper {
+
+                &__photo {
+                    width: 350px;
+                    height: 350px;
+                }
+
+                &__wheel {
+                    height: 300px;
+                    width: 300px;
+                    right: -3em;
+                    top: -4em;
+                }
+				.section-about-button-wrapper {
+					flex-direction: row;
+
+					&__button {
+						margin-left: 1em;
+					}
+				}
+			}
+		}
+	}
 }

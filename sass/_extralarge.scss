@@ -1,3 +1,42 @@
 @media (min-width: 1400px) {
+	main {
 
+        .header {
+            &__name {
+                font-size: 15rem;
+            }
+
+            &__title {
+                font-size: 5rem;
+            }
+        }
+		.section-about {
+
+			&__text-header {
+				font-size: 15rem;
+			}
+
+			&__text-title {
+				font-size: 5rem;
+			}
+
+			&__text-text {
+				font-size: 2rem;
+			}
+			.section-about-photo-wrapper {
+                &__photo {
+                    width: 450px;
+                    height: 450px;
+                    margin: 0 5em;
+                }
+				.section-about-button-wrapper {
+					flex-direction: row;
+
+					&__button {
+						margin-left: 1em;
+					}
+				}
+			}
+		}
+	}
 }

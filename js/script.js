@@ -33,6 +33,39 @@ readBtn.addEventListener('click', showText)
 
 //carousel
 
+const viewport = document.querySelector('.viewport');
+const slides = document.querySelectorAll('.viewport__slide');
+let isDragging = false;
+let startX;
+let translateX = 0;
+let currentIndex = 0;
+
+viewport.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startX = e.touches[0].clientX;
+});
+
+viewport.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+
+    const currentX = e.touches[0].clientX;
+    const diffX = currentX - startX;
+
+    translateX += diffX;
+
+    const lastSlideIndex = slides.length - 1;
+    const maxTranslateX = -lastSlideIndex * (200 + 1);
+    translateX = Math.max(maxTranslateX, Math.min(0, translateX));
+
+    viewport.style.transform = `translateX(${translateX}px)`;
+
+    startX = currentX;
+});
+
+viewport.addEventListener('touchend', () => {
+    isDragging = false;
+});
+
 
 
 
