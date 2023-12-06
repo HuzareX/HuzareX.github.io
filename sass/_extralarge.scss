@@ -3,11 +3,11 @@
 
         .header {
             &__name {
-                font-size: 15rem;
+                font-size: 20rem;
             }
 
             &__title {
-                font-size: 5rem;
+                font-size: 15rem;
             }
         }
 		.section-about {
@@ -37,6 +37,15 @@
 					}
 				}
 			}
+		}
+
+		.section-about-img-wrapper {
+			&__photo {
+				height: 350px;
+				width: 350px;
+				margin-left: 4em;
+			}
+	
 		}
 	}
 }

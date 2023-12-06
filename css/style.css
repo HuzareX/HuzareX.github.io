@@ -239,10 +239,6 @@ main {
   max-width: 100%;
   min-height: 100%;
 }
-main .header {
-  margin-top: 4rem;
-  margin-left: 1.6rem;
-}
 main .header__name {
   font-size: 2.4rem;
   font-weight: 400;
@@ -339,6 +335,27 @@ main .mobile-section-about .slider .viewport__slide {
   background-position: center;
   background-size: cover;
 }
+main .mobile-section-about .wishes {
+  align-self: flex-start;
+}
+main .mobile-section-about .wishes__wish {
+  font-size: 2.4rem;
+  color: #9F9E9E;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+}
+main .mobile-section-about .wishes__name {
+  font-size: 2rem;
+  color: #F5F5F5;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+main .mobile-section-about .wishes__line {
+  margin-top: 1em;
+  height: 1px;
+  width: 100%;
+  background-color: #9F9E9E;
+}
 main .section-about {
   display: none;
   align-items: center;
@@ -434,6 +451,16 @@ main .section-about .section-about-photo-wrapper .section-about-button-wrapper {
 main .section-about .section-about-photo-wrapper .section-about-button-wrapper__button {
   margin-top: 1em;
 }
+main .section-about-img-wrapper {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+main .section-about-img-wrapper__photo {
+  height: 200px;
+  width: 200px;
+  margin-left: 1em;
+}
 
 @media (min-width: 768px) {
   .burger-btn {
@@ -445,8 +472,15 @@ main .section-about .section-about-photo-wrapper .section-about-button-wrapper__
   main {
     padding-left: 196px;
   }
+  main .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
   main .header__name {
-    font-size: 9rem;
+    font-size: 10rem;
   }
   main .header__title {
     font-size: 5rem;
@@ -460,8 +494,17 @@ main .section-about .section-about-photo-wrapper .section-about-button-wrapper__
   main .section-about {
     display: flex;
   }
+  main .section-about-img-wrapper {
+    display: flex;
+  }
 }
 @media (min-width: 992px) {
+  main .header__name {
+    font-size: 15rem;
+  }
+  main .header__title {
+    font-size: 10rem;
+  }
   main .section-about__text-header {
     font-size: 10rem;
   }
@@ -487,13 +530,17 @@ main .section-about .section-about-photo-wrapper .section-about-button-wrapper__
   main .section-about .section-about-photo-wrapper .section-about-button-wrapper__button {
     margin-left: 1em;
   }
+  main .section-about-img-wrapper__photo {
+    height: 300px;
+    width: 300px;
+  }
 }
 @media (min-width: 1400px) {
   main .header__name {
-    font-size: 15rem;
+    font-size: 20rem;
   }
   main .header__title {
-    font-size: 5rem;
+    font-size: 15rem;
   }
   main .section-about__text-header {
     font-size: 15rem;
@@ -514,5 +561,10 @@ main .section-about .section-about-photo-wrapper .section-about-button-wrapper__
   }
   main .section-about .section-about-photo-wrapper .section-about-button-wrapper__button {
     margin-left: 1em;
+  }
+  main .section-about-img-wrapper__photo {
+    height: 350px;
+    width: 350px;
+    margin-left: 4em;
   }
 }/*# sourceMappingURL=style.css.map */

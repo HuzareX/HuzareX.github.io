@@ -1,5 +1,15 @@
 @media (min-width: 992px) {
 	main {
+
+		.header {
+			&__name {
+				font-size: 15rem;
+			}
+
+			&__title {
+				font-size: 10rem;
+			}
+		}
 		.section-about {
 
 			&__text-header {
@@ -34,6 +44,13 @@
 					}
 				}
 			}
+		}
+		.section-about-img-wrapper {
+			&__photo {
+				height: 300px;
+				width: 300px;
+			}
+	
 		}
 	}
 }

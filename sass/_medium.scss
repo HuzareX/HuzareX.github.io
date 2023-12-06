@@ -11,8 +11,15 @@
 		padding-left: 196px;
 
 		.header {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			flex-direction: column;
+			height: 100vh;
 			&__name {
-				font-size: 9rem;
+	
+				
+				font-size: 10rem;
 			}
 			&__title {
 				font-size: 5rem;
@@ -27,6 +34,10 @@
 		}
 
 		.section-about {
+			display: flex;
+		}
+
+		.section-about-img-wrapper {
 			display: flex;
 		}
 
