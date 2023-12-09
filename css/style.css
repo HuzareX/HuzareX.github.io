@@ -320,7 +320,6 @@ main .mobile-section-about .text-wrapper--expanded {
 }
 main .mobile-section-about .slider {
   width: 100vw;
-  height: 200px;
   overflow: hidden;
   margin: 2em;
 }
@@ -328,14 +327,11 @@ main .mobile-section-about .slider .viewport {
   display: flex;
   min-width: 100vw;
   transform: translateX(0px);
-  height: 200px;
 }
 main .mobile-section-about .slider .viewport__slide {
   margin-left: 1em;
   height: 200px;
   width: 200px;
-  background-position: center;
-  background-size: cover;
 }
 main .mobile-section-about .wishes {
   align-self: flex-start;
@@ -433,6 +429,12 @@ main .section-about {
   display: none;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+main .section-about__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 main .section-about__text-wrapper {
@@ -524,15 +526,86 @@ main .section-about .section-about-photo-wrapper .section-about-button-wrapper {
 main .section-about .section-about-photo-wrapper .section-about-button-wrapper__button {
   margin-top: 1em;
 }
-main .section-about-img-wrapper {
+main .section-about .section-about-img-wrapper {
   display: none;
   align-items: center;
   justify-content: center;
 }
-main .section-about-img-wrapper__photo {
+main .section-about .section-about-img-wrapper__photo {
   height: 200px;
   width: 200px;
   margin-left: 1em;
+}
+main .section-about .section-about-hobby {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .section-about .section-about-hobby__header {
+  align-self: flex-start;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+  color: #9F9E9E;
+}
+main .section-about .section-about-hobby__wheel {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+main .section-about .section-about-hobby__wheel--one {
+  background-color: #E9DD75;
+}
+main .section-about .section-about-hobby__wheel--one:hover {
+  background-color: #AAC3DE;
+}
+main .section-about .section-about-hobby__wheel--two {
+  background-color: #CFC036;
+}
+main .section-about .section-about-hobby__wheel--two:hover {
+  background-color: #8CA6C1;
+}
+main .section-about .section-about-hobby__wheel--three {
+  background-color: #A99B17;
+}
+main .section-about .section-about-hobby__wheel--three:hover {
+  background-color: #5D7690;
+}
+main .section-about .section-about-hobby__wheel--four {
+  background-color: #85790E;
+}
+main .section-about .section-about-hobby__wheel--four:hover {
+  background-color: #455E79;
+}
+main .section-about .section-about-hobby__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+main .section-about .section-about-hobby__column {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 50vw;
+}
+main .section-about .section-about-hobby__title {
+  font-size: 2rem;
+  color: #9F9E9E;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+}
+main .section-about .section-about-hobby__text {
+  font-size: 1.4rem;
+  text-align: justify;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -567,7 +640,7 @@ main .section-about-img-wrapper__photo {
   main .section-about {
     display: flex;
   }
-  main .section-about-img-wrapper {
+  main .section-about .section-about-img-wrapper {
     display: flex;
   }
 }

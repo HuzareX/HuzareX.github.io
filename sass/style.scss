@@ -201,7 +201,6 @@ main {
 
 	//header-------------------------------------------
 	.header {
-		
 		&__name {
 			font-size: 2.4rem;
 			font-weight: 400;
@@ -294,7 +293,6 @@ main {
 
 		.slider {
 			width: 100vw;
-			height: 200px;
 			overflow: hidden;
 			margin: 2em;
 
@@ -302,17 +300,14 @@ main {
 				display: flex;
 				min-width: 100vw;
 				transform: translateX(0px);
-				height: 200px;
 				&__slide {
 					margin-left: 1em;
 					height: 200px;
 					width: 200px;
-					background-position: center;
-					background-size: cover;
-
 				}
 			}
 		}
+
 		.wishes {
 			align-self: flex-start;
 			&__wish {
@@ -372,17 +367,16 @@ main {
 					margin-right: 0.5em;
 
 					&--one {
-						background-color:$yellowone;
-
+						background-color: $yellowone;
 					}
 					&--two {
-						background-color:$yellowtwo;
+						background-color: $yellowtwo;
 					}
 					&--three {
-						background-color:$yellowthree;
+						background-color: $yellowthree;
 					}
 					&--four {
-						background-color:$yellowfour;
+						background-color: $yellowfour;
 					}
 				}
 
@@ -418,18 +412,21 @@ main {
 				letter-spacing: 0.96px;
 			}
 		}
-
-
 	}
-
-
 
 	//about---------------------
 	.section-about {
 		display: none;
 		align-items: center;
 		justify-content: center;
-		flex-direction: row;
+		flex-direction: column;
+
+		&__row {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+		}
 
 		&__text-wrapper {
 			display: flex;
@@ -532,26 +529,98 @@ main {
 					margin-top: 1em;
 				}
 			}
-
+		}
+		.section-about-img-wrapper {
+			display: none;
+			align-items: center;
+			justify-content: center;
+	
+			&__photo {
+				height: 200px;
+				width: 200px;
+				margin-left: 1em;
+			}
 		}
 
+		.section-about-hobby {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
 
+			&__header {
+				align-self: flex-start;
+				font-size: 2.5rem;
+				font-weight: 400;
+				letter-spacing: 0.96px;
+				color: $theme;
+			}
 
-	}
-	.section-about-img-wrapper {
-		display: none;
-		align-items: center;
-		justify-content: center;
+			&__wheel {
+				width: 160px;
+				height: 160px;
+				border-radius: 50%;
+				margin-right: 2rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: background-color 0.3s;
 
-		&__photo {
-			height: 200px;
-			width: 200px;
-			margin-left: 1em;
+				&--one {
+					background-color: $yellowone;
+					&:hover {
+						background-color: $blueone;
+					}
+				}
+				&--two {
+					background-color: $yellowtwo;
+					&:hover {
+						background-color: $bluetwo;
+					}
+				}
+				&--three {
+					background-color: $yellowthree;
+					&:hover {
+						background-color: $bluethree;
+					}
+				}
+				&--four {
+					background-color: $yellowfour;
+					&:hover {
+						background-color: $bluefour;
+					}	
+				}
+			}
+
+			&__row {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: row;
+			}
+
+			&__column {
+				display: flex;
+				align-items: flex-start;
+				justify-content: center;
+				flex-direction: column;
+				width: 50vw;
+			}
+
+			&__title {
+				font-size: 2rem;
+				color: $theme;
+				letter-spacing: 0.8px;
+				font-weight: 400;	
+			}
+
+			&__text {
+				font-size: 1.4rem;
+				text-align: justify;
+				font-weight: 400;
+			}
 		}
-
 	}
-
-
 }
 
 @import './small';

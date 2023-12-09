@@ -17,8 +17,6 @@
 			flex-direction: column;
 			height: 100vh;
 			&__name {
-	
-				
 				font-size: 10rem;
 			}
 			&__title {
@@ -35,11 +33,10 @@
 
 		.section-about {
 			display: flex;
+			
+			.section-about-img-wrapper {
+				display: flex;
+			}
 		}
-
-		.section-about-img-wrapper {
-			display: flex;
-		}
-
 	}
 }
