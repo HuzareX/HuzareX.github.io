@@ -20,10 +20,10 @@
 }
 
 .section {
-	padding: 4em 1em;
+	padding: 0em 1em 4em 1em;
 
 	.section__header {
-		font-size: 6.4rem;
+		font-size: 5rem;
 		text-transform: uppercase;
 		font-weight: 700;
 		letter-spacing: -2.56px;
@@ -31,10 +31,11 @@
 
 	.section__title {
 		margin-top: 0.5em;
-		font-size: 3.2rem;
+		font-size: 2.4rem;
 		font-weight: 400;
 		color: $theme;
 		letter-spacing: 0.64px;
+		text-align: center;
 	}
 }
 
@@ -42,16 +43,20 @@
 	height: 4rem;
 	width: 15.1rem;
 	border-radius: 40px;
-    background-color: $yellowtwo;
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: $black;
-    border: none;
-    cursor: pointer;
+	background-color: $yellowtwo;
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: $black;
+	border: none;
+	cursor: pointer;
 }
 
 .text {
-    font-weight: 400;
+	font-weight: 400;
+	text-align: justify;
+	font-size: 1.6rem;
+	margin-top: 1em;
+	color: $links;
 }
 
 .readmore {

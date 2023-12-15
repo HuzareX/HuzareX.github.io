@@ -44,6 +44,18 @@
 					}
 				}
 			}
+
+			.section-about-hobby {
+			
+				&__title {
+					font-size: 2.5rem;
+				}
+				&__header {
+					font-size: 5rem;
+				}
+
+			
+			}
 		}
 		.section-about-img-wrapper {
 			&__photo {
@@ -51,6 +63,10 @@
 				width: 300px;
 			}
 	
+		}
+
+		.text {
+			font-size: 2rem;
 		}
 	}
 }
