@@ -130,6 +130,38 @@ const showText5 = () => {
 
 readmore5.addEventListener('click', showText5)
 
+//experience
+
+const infoWrapper1 = document.getElementById('wrapper1')
+const arrow1 = document.querySelector('.arrow1')
+const wrapperButton1 = document.getElementById('btn1')
+
+const showWrapper = () => {
+    infoWrapper1.style.display = "block"
+    wrapperButton1.style.cursor = "default"
+    arrow1.style.rotate = "180deg"
+    arrow1.style.color = "#8CA6C1"
+
+}
+
+wrapperButton1.addEventListener('click', showWrapper)
+
+const infoWrapper2 = document.getElementById('wrapper2')
+const arrow2 = document.querySelector('.arrow2')
+const wrapperButton2 = document.getElementById('btn2')
+
+const showWrapper2 = () => {
+    infoWrapper2.style.display = "block"
+    wrapperButton2.style.cursor = "default"
+    arrow2.style.rotate = "180deg"
+    arrow2.style.color = "#8CA6C1"
+
+}
+
+wrapperButton2.addEventListener('click', showWrapper2)
+
+
+
 
 
 

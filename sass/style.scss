@@ -35,7 +35,7 @@ body {
 	height: 100vh;
 	width: 100vw;
 	background-color: $yellowtwo;
-	z-index: 100;
+	z-index: 102;
 	transition: transform 0.3s;
 
 	&__close-btn {
@@ -201,7 +201,17 @@ main {
 
 	//header-------------------------------------------
 	.header {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		width: 100%;
+		top: 0;
+		z-index: 100;
+		background-color: $background;
 		&__name {
+			margin-top: 0.4em;
 			font-size: 2.4rem;
 			font-weight: 400;
 			color: $links;
@@ -629,6 +639,58 @@ main {
 			width: 100%;
 			height: 1px;
 			background-color: $theme;	
+		}
+
+		&__item {
+			align-self: flex-start;
+			margin-top: 1em;
+		}
+
+		&__title {
+			position: relative;
+			text-transform: uppercase;
+			cursor: pointer;
+			padding-bottom: 0.2em;
+			font-size: 2.4rem;
+			
+
+			.fa-solid {
+				font-size: 2.5rem;
+				color: $yellowtwo;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				height: 1px;
+				width: 100%;
+				background-color: $theme;
+				bottom: 0;
+				left: 0;
+
+			}
+		}
+
+		&__info-wrapper {
+			display: none;
+		}
+
+		&__job {
+			font-size: 2rem;
+			margin: 0.5em 0;
+			color: $links;
+			font-weight: 400;
+			letter-spacing: 0.8px;
+		}
+
+		&__company {
+			font-weight: 700;
+			font-size: 1.6rem;
+		}
+
+		&__date {
+			font-weight: 700;
+			font-size: 1.6rem;
 		}
 	}
 }

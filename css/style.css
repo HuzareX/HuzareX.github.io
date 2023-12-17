@@ -8,11 +8,11 @@
 
 .burger-btn {
   position: fixed;
-  top: 1em;
+  top: 0.2em;
   right: 1em;
   font-size: 2.4rem;
   padding: 1.2rem;
-  z-index: 100;
+  z-index: 101;
   color: #232323;
   background-color: #CFC036;
   border-radius: 50%;
@@ -69,6 +69,10 @@
   margin-top: 1em;
 }
 
+.show {
+  display: show;
+}
+
 *,
 *::after,
 ::before {
@@ -101,7 +105,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #CFC036;
-  z-index: 100;
+  z-index: 102;
   transition: transform 0.3s;
 }
 .mobile-nav__close-btn {
@@ -244,7 +248,19 @@ main {
   max-width: 100%;
   min-height: 100%;
 }
+main .header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: #333;
+}
 main .header__name {
+  margin-top: 0.4em;
   font-size: 2.4rem;
   font-weight: 400;
   color: #F5F5F5;
@@ -619,6 +635,48 @@ main .section-experience__line {
   height: 1px;
   background-color: #9F9E9E;
 }
+main .section-experience__item {
+  align-self: flex-start;
+  margin-top: 1em;
+}
+main .section-experience__title {
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 0.2em;
+  font-size: 2.4rem;
+}
+main .section-experience__title .fa-solid {
+  font-size: 2.5rem;
+  color: #CFC036;
+}
+main .section-experience__title::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #9F9E9E;
+  bottom: 0;
+  left: 0;
+}
+main .section-experience__info-wrapper {
+  display: none;
+}
+main .section-experience__job {
+  font-size: 2rem;
+  margin: 0.5em 0;
+  color: #F5F5F5;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+main .section-experience__company {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+main .section-experience__date {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
 
 @media (min-width: 768px) {
   .burger-btn {
@@ -631,6 +689,7 @@ main .section-experience__line {
     padding-left: 196px;
   }
   main .header {
+    position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: center;
