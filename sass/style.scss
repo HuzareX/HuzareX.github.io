@@ -207,6 +207,7 @@ main {
 		align-items: flex-start;
 		justify-content: center;
 		width: 100%;
+		padding-bottom: 1em;
 		top: 0;
 		z-index: 100;
 		background-color: $background;
@@ -226,6 +227,7 @@ main {
 		}
 
 		&__line {
+			display: none;
 			height: 1px;
 			width: 100%;
 			background-color: $theme;
@@ -426,6 +428,8 @@ main {
 	}
 
 	//about---------------------
+
+
 	.section-about {
 		display: none;
 		align-items: center;
@@ -448,7 +452,6 @@ main {
 		}
 
 		&__text-header {
-			font-size: 9rem;
 			text-transform: uppercase;
 			font-weight: 500;
 			letter-spacing: -2px;
@@ -652,6 +655,7 @@ main {
 			cursor: pointer;
 			padding-bottom: 0.2em;
 			font-size: 2.4rem;
+			width: 270px;
 			
 
 			.fa-solid {
@@ -691,6 +695,19 @@ main {
 		&__date {
 			font-weight: 700;
 			font-size: 1.6rem;
+		}
+
+		&__mobile-thanks {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			
+		}
+
+		&__download {
+			margin: 2em auto;
+
 		}
 	}
 }

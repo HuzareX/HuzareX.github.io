@@ -17,6 +17,7 @@
 			justify-content: center;
 			flex-direction: column;
 			height: 100vh;
+			z-index: -1;
 			&__name {
 				font-size: 10rem;
 			}
@@ -34,9 +35,58 @@
 
 		.section-about {
 			display: flex;
-			
+
 			.section-about-img-wrapper {
 				display: flex;
+			}
+		}
+
+		.section-experience {
+			position: relative;
+			&__wrapper {
+				display: flex;
+				align-items: flex-start;
+				justify-content: center;
+				flex-direction: row;
+			}
+
+			&__wrapper-two {
+				position: relative;
+				width: 50%;
+				height: 50vh;
+				margin-left: 5em;
+				display: flex;
+				align-items: flex-start;
+				justify-content: flex-start;
+				flex-direction: column;
+				// align-self: flex-start;
+
+			}
+
+			&__line-desktop {
+				position: absolute;
+				top: 1em;
+				left: -2em;
+				width: 1px;
+				height: 100%;
+				background-color: $theme;
+			}
+
+			&__line {
+				display: none;
+			}
+
+			&__info {
+				width: 50%;
+			}
+
+			&__mobile-thanks {
+				display: none;
+			}
+
+
+			&__download {
+				align-self: center;
 			}
 		}
 	}
