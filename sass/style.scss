@@ -429,7 +429,6 @@ main {
 
 	//about---------------------
 
-
 	.section-about {
 		display: none;
 		align-items: center;
@@ -627,7 +626,6 @@ main {
 				letter-spacing: 0.8px;
 				font-weight: 400;
 			}
-
 		}
 	}
 
@@ -636,12 +634,11 @@ main {
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		
 
 		&__line {
 			width: 100%;
 			height: 1px;
-			background-color: $theme;	
+			background-color: $theme;
 		}
 
 		&__item {
@@ -651,14 +648,17 @@ main {
 
 		&__title {
 			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
 			text-transform: uppercase;
 			cursor: pointer;
 			padding-bottom: 0.2em;
 			font-size: 2.4rem;
-			width: 270px;
-			
+			width: 370px;
 
 			.fa-solid {
+				margin-left: 0.5em;
 				font-size: 2.5rem;
 				color: $yellowtwo;
 			}
@@ -671,7 +671,38 @@ main {
 				background-color: $theme;
 				bottom: 0;
 				left: 0;
+			}
+		}
 
+		&__hoverlink {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 4rem;
+			height: 4rem;
+			background-color: $yellowtwo;
+			border-radius: 50%;
+			margin-left: 1em;
+
+			.gotoproject {
+				display: none;
+				color: $yellowtwo;
+				font-size: 1.4rem;
+				font-weight: 400;
+				text-transform: capitalize;
+			}
+
+			&:hover svg {
+				display: none;
+			}
+		&:hover .gotoproject {
+			display: block;
+			color: black;
+		}
+
+			&:hover {
+				width: 10rem;
+				border-radius: 20px;
 			}
 		}
 
@@ -702,12 +733,18 @@ main {
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
-			
+		}
+
+		&__thanks {
+			display: none;
 		}
 
 		&__download {
 			margin: 2em auto;
-
+			display: none;
+		}
+		&__download-mobile {
+			margin: 2em auto;
 		}
 	}
 }

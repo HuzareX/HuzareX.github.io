@@ -87,6 +87,16 @@
 
 			&__download {
 				align-self: center;
+				display: block;
+			}
+
+			&__download-mobile {
+				margin: 2em auto;
+				display: none;
+			}
+
+			&__thanks {
+				display: block;
 			}
 		}
 	}

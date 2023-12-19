@@ -71,6 +71,10 @@ viewport.addEventListener('touchend', () => {
 const readmore2 = document.getElementById('readmore2')
 const text2 = document.getElementById('text2')
 const wheel1 = document.querySelector('.hobby-wrapper__wheel--one')
+const readmore3 = document.getElementById('readmore3')
+const text3 = document.getElementById('text3')
+const wheel2 = document.querySelector('.hobby-wrapper__wheel--two')
+const hide3 = document.getElementById('hide3')
 const hide2 = document.getElementById('hide2')
 
 const showText2 = () => {
@@ -79,16 +83,6 @@ const showText2 = () => {
     wheel1.style.backgroundColor = "#AAC3DE"
     hide2.style.display = "none"
 }
-
-readmore2.addEventListener('click', showText2)
-
-
-
-const readmore3 = document.getElementById('readmore3')
-const text3 = document.getElementById('text3')
-const wheel2 = document.querySelector('.hobby-wrapper__wheel--two')
-const hide3 = document.getElementById('hide3')
-
 const showText3 = () => {
     text3.style.display = "block"
     readmore3.style.display = "none"
@@ -96,6 +90,7 @@ const showText3 = () => {
     hide3.style.display = "none"
 }
 
+readmore2.addEventListener('click', showText2)
 readmore3.addEventListener('click', showText3)
 
 
@@ -104,6 +99,10 @@ const readmore4 = document.getElementById('readmore4')
 const text4 = document.getElementById('text4')
 const wheel3 = document.querySelector('.hobby-wrapper__wheel--three')
 const hide4 = document.getElementById('hide4')
+const readmore5 = document.getElementById('readmore5')
+const text5 = document.getElementById('text5')
+const wheel4 = document.querySelector('.hobby-wrapper__wheel--four')
+const hide5 = document.getElementById('hide5')
 
 const showText4 = () => {
     text4.style.display = "block"
@@ -112,15 +111,6 @@ const showText4 = () => {
     hide4.style.display = "none"
 }
 
-readmore4.addEventListener('click', showText4)
-
-
-
-const readmore5 = document.getElementById('readmore5')
-const text5 = document.getElementById('text5')
-const wheel4 = document.querySelector('.hobby-wrapper__wheel--four')
-const hide5 = document.getElementById('hide5')
-
 const showText5 = () => {
     text5.style.display = "block"
     readmore5.style.display = "none"
@@ -128,6 +118,7 @@ const showText5 = () => {
     hide5.style.display = "none"
 }
 
+readmore4.addEventListener('click', showText4)
 readmore5.addEventListener('click', showText5)
 
 //experience
@@ -135,30 +126,39 @@ readmore5.addEventListener('click', showText5)
 const infoWrapper1 = document.getElementById('wrapper1')
 const arrow1 = document.querySelector('.arrow1')
 const wrapperButton1 = document.getElementById('btn1')
-
-const showWrapper = () => {
-    infoWrapper1.style.display = "block"
-    wrapperButton1.style.cursor = "default"
-    arrow1.style.rotate = "180deg"
-    arrow1.style.color = "#8CA6C1"
-
-}
-
-wrapperButton1.addEventListener('click', showWrapper)
-
 const infoWrapper2 = document.getElementById('wrapper2')
 const arrow2 = document.querySelector('.arrow2')
 const wrapperButton2 = document.getElementById('btn2')
 
-const showWrapper2 = () => {
-    infoWrapper2.style.display = "block"
-    wrapperButton2.style.cursor = "default"
-    arrow2.style.rotate = "180deg"
-    arrow2.style.color = "#8CA6C1"
+const showWrapper = () => {
+    infoWrapper1.style.display = "block"
+    infoWrapper2.style.display = "none"
+    wrapperButton1.style.cursor = "default"
+    wrapperButton2.style.cursor = "pointer"
+    arrow1.style.rotate = "180deg"
+    arrow2.style.rotate = "0deg"
+    arrow1.style.color = "#8CA6C1"
+    arrow2.style.color = "#CFC036"
 
 }
 
+const showWrapper2 = () => {
+    infoWrapper2.style.display = "block"
+    infoWrapper1.style.display = "none"
+    wrapperButton2.style.cursor = "default"
+    wrapperButton1.style.cursor = "pointer"
+    arrow2.style.rotate = "180deg"
+    arrow1.style.rotate = "0deg"
+    arrow2.style.color = "#8CA6C1"
+    arrow1.style.color = "#CFC036"
+    
+}
+
+
+wrapperButton1.addEventListener('click', showWrapper)
 wrapperButton2.addEventListener('click', showWrapper2)
+
+
 
 
 

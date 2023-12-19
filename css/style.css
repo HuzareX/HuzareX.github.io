@@ -657,13 +657,17 @@ main .section-experience__item {
 }
 main .section-experience__title {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   text-transform: uppercase;
   cursor: pointer;
   padding-bottom: 0.2em;
   font-size: 2.4rem;
-  width: 270px;
+  width: 370px;
 }
 main .section-experience__title .fa-solid {
+  margin-left: 0.5em;
   font-size: 2.5rem;
   color: #CFC036;
 }
@@ -675,6 +679,34 @@ main .section-experience__title::after {
   background-color: #9F9E9E;
   bottom: 0;
   left: 0;
+}
+main .section-experience__hoverlink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #CFC036;
+  border-radius: 50%;
+  margin-left: 1em;
+}
+main .section-experience__hoverlink .gotoproject {
+  display: none;
+  color: #CFC036;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+main .section-experience__hoverlink:hover svg {
+  display: none;
+}
+main .section-experience__hoverlink:hover .gotoproject {
+  display: block;
+  color: black;
+}
+main .section-experience__hoverlink:hover {
+  width: 10rem;
+  border-radius: 20px;
 }
 main .section-experience__info-wrapper {
   display: none;
@@ -700,7 +732,14 @@ main .section-experience__mobile-thanks {
   justify-content: center;
   flex-direction: column;
 }
+main .section-experience__thanks {
+  display: none;
+}
 main .section-experience__download {
+  margin: 2em auto;
+  display: none;
+}
+main .section-experience__download-mobile {
   margin: 2em auto;
 }
 
@@ -779,6 +818,14 @@ main .section-experience__download {
   }
   main .section-experience__download {
     align-self: center;
+    display: block;
+  }
+  main .section-experience__download-mobile {
+    margin: 2em auto;
+    display: none;
+  }
+  main .section-experience__thanks {
+    display: block;
   }
 }
 @media (min-width: 992px) {
