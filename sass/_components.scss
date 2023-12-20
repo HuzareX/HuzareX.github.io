@@ -21,12 +21,17 @@
 
 .section {
 	padding: 0em 1em 4em 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 
 	&__header {
 		font-size: 5rem;
 		text-transform: uppercase;
 		font-weight: 700;
 		letter-spacing: -2.56px;
+		padding-top: 72.6px;
 	}
 
 	&__title {
@@ -81,12 +86,11 @@
 	
 		&__header {
 			font-size: 9rem;
+			padding-top: 120px;
 
 		}
 	
-		&__title {
-	
-		}
+
 	}
 }
 @media (min-width: 992px) {
@@ -94,12 +98,10 @@
 		
 	
 		&__header {
-			font-size: 12rem;
+			font-size: 13rem;
 		}
 	
-		&__title {
-	
-		}
+
 	}
 }
 
@@ -108,11 +110,9 @@
 		
 	
 		&__header {
-			font-size: 15rem;
+			font-size: 16rem;
 		}
 	
-		&__title {
 	
-		}
 	}
 }

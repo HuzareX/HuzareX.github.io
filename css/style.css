@@ -21,12 +21,17 @@
 
 .section {
   padding: 0em 1em 4em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .section__header {
   font-size: 5rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -2.56px;
+  padding-top: 72.6px;
 }
 .section__title {
   margin-top: 0.5em;
@@ -76,16 +81,17 @@
 @media (min-width: 768px) {
   .section__header {
     font-size: 9rem;
+    padding-top: 120px;
   }
 }
 @media (min-width: 992px) {
   .section__header {
-    font-size: 12rem;
+    font-size: 13rem;
   }
 }
 @media (min-width: 1200px) {
   .section__header {
-    font-size: 15rem;
+    font-size: 16rem;
   }
 }
 *,
@@ -120,7 +126,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #CFC036;
-  z-index: 102;
+  z-index: 105;
   transition: transform 0.3s;
 }
 .mobile-nav__close-btn {
@@ -570,8 +576,8 @@ main .section-about .section-about-img-wrapper {
   justify-content: center;
 }
 main .section-about .section-about-img-wrapper__photo {
-  height: 200px;
-  width: 200px;
+  height: 170px;
+  width: 170px;
   margin-left: 1em;
 }
 main .section-about .section-about-hobby {
@@ -588,10 +594,10 @@ main .section-about .section-about-hobby__header {
   color: #9F9E9E;
 }
 main .section-about .section-about-hobby__wheel {
-  width: 160px;
-  height: 160px;
+  width: 145px;
+  height: 145px;
   border-radius: 50%;
-  margin-right: 5rem;
+  margin-right: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -664,7 +670,6 @@ main .section-experience__title {
   cursor: pointer;
   padding-bottom: 0.2em;
   font-size: 2.4rem;
-  width: 370px;
 }
 main .section-experience__title .fa-solid {
   margin-left: 0.5em;
@@ -741,6 +746,130 @@ main .section-experience__download {
 }
 main .section-experience__download-mobile {
   margin: 2em auto;
+}
+main .section-contact {
+  padding-bottom: 150px;
+}
+main .section-contact__photo-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .section-contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .section-contact__column-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .section-contact__photo {
+  height: 160px;
+  width: 160px;
+  margin-top: 2em;
+  background-image: url(/img/wojtek.JPG);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  z-index: 102;
+}
+main .section-contact__yellowwheel {
+  position: absolute;
+  height: 188px;
+  width: 188px;
+  left: -1.5em;
+  top: 1em;
+  transform: translateX(-50%, -50%);
+  border-radius: 50%;
+  background-color: #CFC036;
+  z-index: 100;
+}
+main .section-contact__bluewheel {
+  position: absolute;
+  height: 145px;
+  width: 145px;
+  right: -2em;
+  top: 2.5em;
+  transform: translateX(-50%, -50%);
+  border-radius: 50%;
+  background-color: #8CA6C1;
+  z-index: 101;
+}
+main .section-contact__name-wrapper {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .section-contact__name {
+  font-weight: 400;
+  font-size: 3.2rem;
+  color: #F5F5F5;
+  letter-spacing: 0.64px;
+}
+main .section-contact__specialization {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #9F9E9E;
+}
+main .section-contact__download {
+  margin-top: 1em;
+  display: none;
+}
+main .section-contact__wrapper-one {
+  display: flex;
+  flex-direction: column;
+}
+main .section-contact__wrapper-one .fa-solid {
+  margin-left: 1em;
+  margin-top: 0.3em;
+  margin-right: 0.5em;
+  font-size: 40px;
+  color: #CFC036;
+}
+main .section-contact__mail {
+  color: #F5F5F5;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+main .section-contact__links-wrapper {
+  align-self: flex-start;
+}
+main .section-contact__title {
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #9F9E9E;
+}
+main .section-contact__wrapper-two {
+  margin-top: 3em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+main .section-contact__socials-wrapper {
+  display: flex;
+  width: 95vw;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+main .section-contact__socials-wrapper .fa-brands {
+  margin-top: 1em;
+  font-size: 4rem;
+  color: #CFC036;
+  cursor: pointer;
+}
+main .section-contact__socials-wrapper p {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -826,6 +955,49 @@ main .section-experience__download-mobile {
   }
   main .section-experience__thanks {
     display: block;
+  }
+  main .section-contact__socials-wrapper {
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .section-contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  main .section-contact__name-wrapper {
+    align-items: flex-start;
+  }
+  main .section-contact__download {
+    display: block;
+  }
+  main .section-contact__column-wrapper {
+    margin-left: 8em;
+  }
+  main .section-contact__bluewheel {
+    right: -1.5em;
+  }
+  main .section-contact__social-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100px;
+  }
+  main .section-contact__social-wrapper a {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  main .section-contact__social-wrapper a p {
+    color: #F5F5F5;
+    display: block;
+    margin-left: 1em;
+    font-size: 2rem;
   }
 }
 @media (min-width: 992px) {

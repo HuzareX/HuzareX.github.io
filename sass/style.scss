@@ -35,7 +35,7 @@ body {
 	height: 100vh;
 	width: 100vw;
 	background-color: $yellowtwo;
-	z-index: 102;
+	z-index: 105;
 	transition: transform 0.3s;
 
 	&__close-btn {
@@ -549,8 +549,8 @@ main {
 			justify-content: center;
 
 			&__photo {
-				height: 200px;
-				width: 200px;
+				height: 170px;
+				width: 170px;
 				margin-left: 1em;
 			}
 		}
@@ -570,10 +570,10 @@ main {
 			}
 
 			&__wheel {
-				width: 160px;
-				height: 160px;
+				width: 145px;
+				height: 145px;
 				border-radius: 50%;
-				margin-right: 5rem;
+				margin-right: 1.5rem;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -655,7 +655,6 @@ main {
 			cursor: pointer;
 			padding-bottom: 0.2em;
 			font-size: 2.4rem;
-			width: 370px;
 
 			.fa-solid {
 				margin-left: 0.5em;
@@ -746,6 +745,151 @@ main {
 		&__download-mobile {
 			margin: 2em auto;
 		}
+	}
+
+	.section-contact {
+		padding-bottom: 150px;
+		&__photo-wrapper {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		.row {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		&__column-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		&__photo {
+			height: 160px;
+			width: 160px;
+			margin-top: 2em;
+			background-image: url(/img/wojtek.JPG);
+			background-position: center;
+			background-size: cover;
+			border-radius: 50%;
+			z-index: 102;
+		}
+
+		&__yellowwheel {
+			position: absolute;
+			height: 188px;
+			width: 188px;
+			left: -1.5em;
+			top: 1em;
+			transform: translateX(-50%, -50%);
+			border-radius: 50%;
+			background-color: $yellowtwo;
+			z-index: 100;
+		}
+		&__bluewheel {
+			position: absolute;
+			height: 145px;
+			width: 145px;
+			right: -2em;
+			top: 2.5em;
+			transform: translateX(-50%, -50%);
+			border-radius: 50%;
+			background-color: $bluetwo;
+			z-index: 101;
+		}
+
+		&__name-wrapper {
+			margin-top: 1em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		&__name {
+			font-weight: 400;
+			font-size: 3.2rem;
+			color: $links;
+			letter-spacing: 0.64px;
+		}
+
+		&__specialization {
+			font-size: 2rem;
+			font-weight: 400;
+			color: $theme;
+		}
+
+		&__download {
+			margin-top: 1em;
+			display: none;
+		}
+
+		&__wrapper-one {
+			display: flex;
+			flex-direction: column;
+
+			.fa-solid {
+				margin-left: 1em;
+				margin-top: 0.3em;
+				margin-right: 0.5em;
+				font-size: 40px;
+				color: $yellowtwo;
+			}
+		}
+
+		&__mail {
+			color: $links;
+			font-size: 2rem;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		&__links-wrapper {
+			align-self: flex-start
+		}
+
+		&__title {
+			font-size: 3.2rem;
+			font-weight: 400;
+			color: $theme;
+		}
+
+		&__wrapper-two {
+			margin-top: 3em;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			flex-direction: column;
+		}
+
+		&__socials-wrapper {
+			display: flex;
+			width: 95vw;
+			align-items: center;
+			justify-content: space-around;
+			flex-direction: row;
+
+			.fa-brands {
+				margin-top: 1em;
+				font-size: 4rem;
+				color: $yellowtwo;
+				cursor: pointer;
+			}
+
+			p {
+				display: none
+			}
+		}
+
+
+		
 	}
 }
 
