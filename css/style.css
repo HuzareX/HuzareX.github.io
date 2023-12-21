@@ -1,11 +1,3 @@
-.close {
-  transform: translateX(150%);
-}
-
-.active {
-  transform: translateX(0);
-}
-
 .burger-btn {
   position: fixed;
   top: 0.2em;
@@ -129,6 +121,12 @@ body {
   z-index: 105;
   transition: transform 0.3s;
 }
+.mobile-nav.close {
+  transform: translateX(150%);
+}
+.mobile-nav.active {
+  transform: translateX(0);
+}
 .mobile-nav__close-btn {
   position: absolute;
   top: 0.5em;
@@ -246,6 +244,10 @@ body {
   text-transform: uppercase;
   color: #F5F5F5;
 }
+.desktop-nav__link.active {
+  background-color: #CFC036;
+  color: #CFC036;
+}
 .desktop-nav__socials {
   display: flex;
   flex-direction: row;
@@ -319,7 +321,7 @@ main .mobile-section-about .photo-wrapper__img {
   position: relative;
   width: 216px;
   height: 216px;
-  background-image: url(/img/wojtek.JPG);
+  background-image: url(/img/wojtek-small.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -521,7 +523,7 @@ main .section-about .section-about-photo-wrapper__photo {
   position: relative;
   width: 200px;
   height: 200px;
-  background-image: url(/img/wojtek.JPG);
+  background-image: url(/img/wojtek-small.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -773,7 +775,7 @@ main .section-contact__photo {
   height: 160px;
   width: 160px;
   margin-top: 2em;
-  background-image: url(/img/wojtek.JPG);
+  background-image: url(/img/wojtek-small.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 50%;
@@ -1063,6 +1065,7 @@ main .section-contact__socials-wrapper p {
     width: 450px;
     height: 450px;
     margin: 0 5em;
+    background-image: url(/img/wojtek-big.jpg);
   }
   main .section-about .section-about-photo-wrapper .section-about-button-wrapper {
     flex-direction: row;

@@ -11,7 +11,7 @@
 
 html {
 	font-size: 62.5%;
-	scroll-behavior: smooth;
+	scroll-behavior:smooth;
 }
 
 body {
@@ -37,6 +37,14 @@ body {
 	background-color: $yellowtwo;
 	z-index: 105;
 	transition: transform 0.3s;
+
+	&.close {
+		transform: translateX(150%);
+	}
+	
+	&.active {
+		transform: translateX(0);
+	}
 
 	&__close-btn {
 		position: absolute;
@@ -169,7 +177,14 @@ body {
 		text-decoration: none;
 		text-transform: uppercase;
 		color: $links;
+
+		&.active {
+			background-color: $yellowtwo;
+			color: $yellowtwo;
+		}
 	}
+
+
 
 	&__socials {
 		display: flex;
@@ -253,7 +268,7 @@ main {
 				position: relative;
 				width: 216px;
 				height: 216px;
-				background-image: url(/img/wojtek.JPG);
+				background-image: url(/img/wojtek-small.jpg);
 				background-position: center;
 				background-size: cover;
 			}
@@ -487,7 +502,7 @@ main {
 				position: relative;
 				width: 200px;
 				height: 200px;
-				background-image: url(/img/wojtek.JPG);
+				background-image: url(/img/wojtek-small.jpg);
 				background-size: cover;
 				background-position: center;
 			}
@@ -775,7 +790,7 @@ main {
 			height: 160px;
 			width: 160px;
 			margin-top: 2em;
-			background-image: url(/img/wojtek.JPG);
+			background-image: url(/img/wojtek-small.jpg);
 			background-position: center;
 			background-size: cover;
 			border-radius: 50%;
