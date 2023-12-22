@@ -244,7 +244,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 893px;
+  height: 100vh;
   width: 196px;
   z-index: 100;
 }
@@ -275,6 +275,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 1em;
 }
 .desktop-nav__social {
   font-size: 2.6rem;
@@ -681,6 +682,11 @@ main .section-experience__line {
   width: 100%;
   height: 1px;
   background-color: #9F9E9E;
+}
+main .section-experience a {
+  display: flex;
+  text-decoration: none;
+  color: #F5F5F5;
 }
 main .section-experience__item {
   align-self: flex-start;
