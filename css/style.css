@@ -4,11 +4,14 @@
   right: 1em;
   font-size: 2.4rem;
   padding: 1.2rem;
-  z-index: 101;
+  z-index: 1001;
   color: #232323;
   background-color: #CFC036;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   cursor: pointer;
+  text-align: center;
 }
 
 .section {
@@ -86,6 +89,26 @@
     font-size: 16rem;
   }
 }
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: url("/Fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: url("/Fonts/Ubuntu-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: url("/Fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: url("/Fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
 *,
 *::after,
 ::before {
@@ -118,7 +141,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #CFC036;
-  z-index: 105;
+  z-index: 1002;
   transition: transform 0.3s;
 }
 .mobile-nav.close {
@@ -280,7 +303,7 @@ main .header {
   width: 100%;
   padding-bottom: 1em;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   background-color: #333;
 }
 main .header__name {

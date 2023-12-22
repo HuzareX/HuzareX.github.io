@@ -1,6 +1,25 @@
 @import './colors';
 @import './components';
-
+@font-face {
+	font-family: 'Ubuntu', sans-serif;
+	src: url("/Fonts/Ubuntu-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Ubuntu', sans-serif;
+	src: url("/Fonts/Ubuntu-Light.ttf") format("truetype");
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Ubuntu', sans-serif;
+	src: url("/Fonts/Ubuntu-Medium.ttf") format("truetype");
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Ubuntu', sans-serif;
+	src: url("/Fonts/Ubuntu-Bold.ttf") format("truetype");
+	font-weight: 700;
+}
 *,
 *::after,
 ::before {
@@ -11,7 +30,7 @@
 
 html {
 	font-size: 62.5%;
-	scroll-behavior:smooth;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -35,13 +54,13 @@ body {
 	height: 100vh;
 	width: 100vw;
 	background-color: $yellowtwo;
-	z-index: 105;
+	z-index: 1002;
 	transition: transform 0.3s;
 
 	&.close {
 		transform: translateX(150%);
 	}
-	
+
 	&.active {
 		transform: translateX(0);
 	}
@@ -184,8 +203,6 @@ body {
 		}
 	}
 
-
-
 	&__socials {
 		display: flex;
 		flex-direction: row;
@@ -224,7 +241,7 @@ main {
 		width: 100%;
 		padding-bottom: 1em;
 		top: 0;
-		z-index: 100;
+		z-index: 1000;
 		background-color: $background;
 		&__name {
 			margin-top: 0.4em;
@@ -709,10 +726,10 @@ main {
 			&:hover svg {
 				display: none;
 			}
-		&:hover .gotoproject {
-			display: block;
-			color: black;
-		}
+			&:hover .gotoproject {
+				display: block;
+				color: black;
+			}
 
 			&:hover {
 				width: 10rem;
@@ -867,7 +884,7 @@ main {
 		}
 
 		&__links-wrapper {
-			align-self: flex-start
+			align-self: flex-start;
 		}
 
 		&__title {
@@ -899,12 +916,9 @@ main {
 			}
 
 			p {
-				display: none
+				display: none;
 			}
 		}
-
-
-		
 	}
 }
 

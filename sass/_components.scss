@@ -8,11 +8,14 @@
 	right: 1em;
 	font-size: 2.4rem;
 	padding: 1.2rem;
-	z-index: 101;
+	z-index: 1001;
 	color: $black;
 	background-color: $yellowtwo;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
 	cursor: pointer;
+	text-align: center;
 }
 
 .section {
